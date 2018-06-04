@@ -1,0 +1,28 @@
+{
+  "name": "odoo.write",
+  "type": "action",
+  "description": "This method will takes a list of records to update and a mapping of updated fields to values similar to odoo.create.",
+  "inputs": {
+    "trigger": {
+      "type": "trigger"
+    },
+    "odoo": {
+      "type": "odoo"
+    },
+    "model": {
+      "type": "odoo.model",
+      "maxConnectors": 1
+    },
+    "identifiers": {
+      "type": "math.number"
+    },
+    "objects": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "done": {
+      "type": "trigger"
+    }
+  }
+}

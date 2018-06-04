@@ -1,0 +1,9 @@
+{
+  "name": "odoo",
+  "outputs": {
+    "odoo": {
+      "type": "odoo"
+    }
+  },
+  "vault": ["url", "username", "password"]
+}

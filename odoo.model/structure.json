@@ -1,0 +1,10 @@
+{
+  "name": "odoo.model",
+  "description": "Returns an Odoo model.",
+  "type": "object",
+  "outputs": {
+    "model": {
+      "type": "odoo.model"
+    }
+  }
+}

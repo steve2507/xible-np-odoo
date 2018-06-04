@@ -1,0 +1,25 @@
+{
+  "name": "odoo.unlink",
+  "type": "action",
+  "description": "Delete records by providing their ids.",
+  "inputs": {
+    "trigger": {
+      "type": "trigger"
+    },
+    "odoo": {
+      "type": "odoo"
+    },
+    "model": {
+      "type": "odoo.model",
+      "maxConnectors": 1
+    },
+    "identifiers": {
+      "type": "math.number"
+    }
+  },
+  "outputs": {
+    "done": {
+      "type": "trigger"
+    }
+  }
+}

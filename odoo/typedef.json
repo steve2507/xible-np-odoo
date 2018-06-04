@@ -1,0 +1,10 @@
+{
+  "odoo": {
+    "color": "#75526b",
+    "extends": "object"
+  },
+  "odoo.model": {
+    "color": "#75526b",
+    "extends": "string"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "odoo.create",
+  "type": "action",
+  "description": "This method will create a single record for each of the input objects and return their database identifiers.",
+  "inputs": {
+    "trigger": {
+      "type": "trigger"
+    },
+    "odoo": {
+      "type": "odoo"
+    },
+    "model": {
+      "type": "odoo.model",
+      "maxConnectors": 1
+    },
+    "objects": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "done": {
+      "type": "trigger"
+    },
+    "identifiers": {
+      "type": "math.number"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "odoo.search",
+  "inputs": {
+    "odoo": {
+      "type": "odoo"
+    },
+    "model": {
+      "type": "odoo.model",
+      "maxConnectors": 1
+    },
+    "params": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "identifiers": {
+      "type": "math.number"
+    }
+  }
+}
