@@ -15,7 +15,7 @@ async function execute_kw(NODE, state, method, ...params) {
     params = [await paramsIn.getValues(state)];
   }
 
-  return Promise.all(odoos.map((odoo) => {
+  const values = await Promise.all(odoos.map((odoo) => {
     return new Promise((resolve, reject) => {
       odoo.execute_kw(model, method, [params], (err, value) => {
         if (err) {
@@ -28,6 +28,8 @@ async function execute_kw(NODE, state, method, ...params) {
       });
     });
   }));
+
+  return [].concat(...values);
 }
 
 module.exports = { execute_kw };
